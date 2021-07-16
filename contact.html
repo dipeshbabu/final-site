@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- required meta tags -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Dipesh Mahato" />
+    <meta name="description" content="Contact - dotCircle" />
+
+    <!-- title -->
+    <title>Contact | dotCircle</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/contact.css" />
+
+    <!-- fonts -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- logo and navigation menu -->
+    <nav class="navbar">
+      <ul class="navbar__links">
+        <li class="navbar__logo">
+          <a href="home.html">
+            <img src="assets/images/matroid.png" alt="logo" />
+          </a>
+        </li>
+        <li class="navbar__item"><a href="home.html">Home</a></li>
+        <li class="navbar__item"><a href="product.html">Product</a></li>
+        <li class="navbar__item"><a href="partners.html">Partners</a></li>
+        <li class="navbar__item"><a href="about.html">About</a></li>
+        <li class="navbar__item">
+          <a href="contact.html" class="active">Contact</a>
+        </li>
+        <li class="navbar__toggle"><span class="navbar__bars"></span></li>
+      </ul>
+    </nav>
+
+    <!-- content of the page -->
+    <main>
+      <section class="main-page">
+        <h1>Let's cooperate with us</h1>
+        <hr />
+        <!-- form layout -->
+        <form
+          name="f1"
+          onsubmit="return validate();"
+          action="contact.html"
+          class="main-page__form-style"
+        >
+          <label for="fname">
+            <input
+              type="text"
+              id="fname"
+              name="firstname"
+              placeholder="First Name*"
+            />
+          </label>
+
+          <label for="lname">
+            <input
+              type="text"
+              id="lname"
+              name="lastname"
+              placeholder="Last Name*"
+            />
+          </label>
+
+          <label for="phone">
+            <input type="tel" id="phone" name="phone" placeholder="Phone*" />
+          </label>
+
+          <label for="email">
+            <input type="email" id="email" name="email" placeholder="Email*" />
+          </label>
+
+          <label for="requirements">
+            <textarea
+              name="requirements"
+              id="requirements"
+              placeholder="Write your requirements"
+              cols="50"
+              rows="5"
+            ></textarea>
+          </label>
+
+          <input type="submit" value="SEND MESSAGE" />
+        </form>
+
+        <aside>
+          <section class="contact-details">
+            <header>
+              <h2>Contact Details</h2>
+              <p>dotCircle Inc.</p>
+              <br />
+            </header>
+            <address>
+              <ul>
+                <li>
+                  <a href="#">
+                    <i class="material-icons">location_on</i>44600 Basundhara,
+                    Kathmandu
+                  </a>
+                </li>
+                <li>
+                  <a href="tel:+9779818314218">
+                    <i class="material-icons">phone_iphone</i>
+                    9818314218
+                  </a>
+                </li>
+                <li>
+                  <a href="mailto:dotcircle@dotcircle.ai">
+                    <i class="material-icons">email</i>
+                    dotcircle@dotcircle.ai
+                  </a>
+                </li>
+              </ul>
+            </address>
+          </section>
+
+          <!-- google map -->
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d56499.278536548576!2d85.29798283474294!3d27.74182515732079!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x39eb193792b3580d%3A0x86eb30742b9cec24!2sbasundhara%20kathmandu!3m2!1d27.7417634!2d85.33300679999999!5e0!3m2!1sen!2snp!4v1623512660593!5m2!1sen!2snp"
+            width="400"
+            height="300"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            title="find-us"
+            class="contact-details__google-map"
+          ></iframe>
+        </aside>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="page-footer">
+      <ul>
+        <li>
+          <a href="#"><i class="fab fa-github page-footer--social"></i></a>
+          <a href="#"><i class="fab fa-facebook-f page-footer--social"></i></a>
+          <a href="#"><i class="fab fa-twitter page-footer--social"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in page-footer--social"></i></a>
+        </li>
+      </ul>
+      <p>&copy; 2021 dotCircle. All rights reserved.</p>
+    </footer>
+
+    <!-- js includes -->
+    <script src="assets/js/validation.js" async></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".navbar__toggle").click(function () {
+          $(this).toggleClass("active");
+          $(".navbar__item").fadeToggle("open");
+        });
+      });
+    </script>
+  </body>
+</html>

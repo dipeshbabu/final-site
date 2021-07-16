@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- required meta tags -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Dipesh Mahato" />
+    <meta name="description" content="Product - dotCircle" />
+
+    <!-- title -->
+    <title>Product | dotCircle</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/product.css" />
+
+    <!-- fonts -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- logo and navigation menu -->
+    <nav class="navbar">
+      <ul class="navbar__links">
+        <li class="navbar__logo">
+          <a href="home.html">
+            <img src="assets/images/matroid.png" alt="logo" />
+          </a>
+        </li>
+        <li class="navbar__item"><a href="home.html">Home</a></li>
+        <li class="navbar__item">
+          <a href="product.html" class="active">Product</a>
+        </li>
+        <li class="navbar__item"><a href="partners.html">Partners</a></li>
+        <li class="navbar__item"><a href="about.html">About</a></li>
+        <li class="navbar__item"><a href="contact.html">Contact</a></li>
+        <li class="navbar__toggle"><span class="navbar__bars"></span></li>
+      </ul>
+    </nav>
+
+    <!-- main layout of the page -->
+    <main>
+      <section class="main-page">
+        <h2>
+          Enterprise <br />
+          Conversational AI Chatbots
+        </h2>
+        <a href="contact.html">
+          <p class="main-page__btn">
+            BOOK A DEMO
+            <i class="main-page__arrow main-page__right"></i>
+          </p>
+        </a>
+        <figure>
+          <img
+            src="assets/images/aeroland-tab-content-image.png"
+            alt="chatbot assistant"
+            class="main-page__aeroland"
+          />
+        </figure>
+      </section>
+
+      <article class="container-secondary">
+        <header>
+          <h2>Get your issues fixed with our products.</h2>
+          <p>Our bot can aid in converting conversations into conversions.</p>
+        </header>
+        <div class="container-secondary__products">
+          <figure>
+            <img
+              src="assets/images/speech-to-text-automatic-speech-recognition.png"
+              alt="speech-to-text"
+              class="container-secondary__speech-text"
+            />
+            <figcaption>Nepali Speech to Text</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="assets/images/NyftyBot_small_512x512.webp"
+              alt="team-goals"
+              class="container-secondary__eliza"
+            />
+            <figcaption>Eliza 1.0</figcaption>
+          </figure>
+        </div>
+      </article>
+    </main>
+
+    <!-- footer content -->
+    <footer class="page-footer">
+      <ul>
+        <li>
+          <a href="#"><i class="fab fa-github page-footer--social"></i></a>
+          <a href="#"><i class="fab fa-facebook-f page-footer--social"></i></a>
+          <a href="#"><i class="fab fa-twitter page-footer--social"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in page-footer--social"></i></a>
+        </li>
+      </ul>
+      <p>&#169; 2021 dotCircle. All rights reserved.</p>
+    </footer>
+
+    <!-- js includes -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".navbar__toggle").click(function () {
+          $(this).toggleClass("active");
+          $(".navbar__item").fadeToggle("open");
+        });
+      });
+    </script>
+  </body>
+</html>

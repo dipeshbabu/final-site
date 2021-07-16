@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- required meta tags -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Dipesh Mahato" />
+    <meta name="description" content="Partners - dotCircle" />
+
+    <!-- title -->
+    <title>Partners | dotCircle</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/partners.css" />
+
+    <!-- fonts -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- logo and navigation menu -->
+    <nav class="navbar">
+      <ul class="navbar__links">
+        <li class="navbar__logo">
+          <a href="home.html">
+            <img src="assets/images/matroid.png" alt="logo" />
+          </a>
+        </li>
+        <li class="navbar__item"><a href="home.html">Home</a></li>
+        <li class="navbar__item"><a href="product.html">Product</a></li>
+        <li class="navbar__item">
+          <a href="partners.html" class="active">Partners</a>
+        </li>
+        <li class="navbar__item"><a href="about.html">About</a></li>
+        <li class="navbar__item">
+          <a href="contact.html">Contact</a>
+        </li>
+        <li class="navbar__toggle"><span class="navbar__bars"></span></li>
+      </ul>
+    </nav>
+
+    <!-- main layout of the page -->
+    <main>
+      <section class="main-page">
+        <h2 class="main-page__title">Want to become our partner?</h2>
+        <p class="main-page__description">
+          We deliver the best <em><strong>Hyper-tailored</strong></em> and
+          <em><strong>Hyper-effective</strong></em> Coversational AI solutions
+          to every company, niche and industry and more.
+        </p>
+        <img
+          src="assets/images/business-partnership-illustration.webp"
+          alt="business-partner"
+          class="main-page__partners"
+        />
+        <label for="show" class="show-btn">BECOME A PARTNER</label>
+        <input type="checkbox" id="show" />
+        <div class="container">
+          <label
+            for="show"
+            class="close-btn fas fa-times"
+            title="close"
+          ></label>
+          <p class="text">Become a Partner</p>
+          <form method="GET" action="contact.html" class="form-style">
+            <label for="fname">
+              <input
+                type="text"
+                id="fname"
+                name="firstname"
+                placeholder="First Name*"
+                required
+              />
+            </label>
+
+            <label for="lname">
+              <input
+                type="text"
+                id="lname"
+                name="lastname"
+                placeholder="Last Name*"
+                required
+              />
+            </label>
+
+            <label for="phone">
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="Phone*"
+                required
+              />
+            </label>
+
+            <label for="email">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Business Email*"
+                required
+              />
+            </label>
+
+            <label for="company">
+              <input
+                type="text"
+                id="company"
+                name="company"
+                placeholder="Company"
+              />
+            </label>
+
+            <label for="jobtitle">
+              <input
+                type="text"
+                id="jobtitle"
+                name="jobtitle"
+                placeholder="Job Title"
+              />
+            </label>
+
+            <label for="requirements">
+              <textarea
+                name="requirements"
+                id="requirements"
+                placeholder="Write your requirements"
+                cols="50"
+                rows="5"
+              ></textarea>
+            </label>
+
+            <input type="submit" value="SIGN UP" />
+          </form>
+        </div>
+        <hr />
+
+        <article class="customers-partners">
+          <header>
+            <h2>Our Trusted Customers & Partners</h2>
+          </header>
+          <figure class="customers-partners__slider">
+            <img
+              src="assets/logos/dotscience.svg"
+              alt="dotscience"
+              class="customers-partners__slide"
+            />
+            <img
+              src="assets/logos/butterfly.svg"
+              alt="butterfly"
+              class="customers-partners__slide"
+            />
+            <img
+              src="assets/logos/airbnb-logo.svg"
+              alt="airbnb-logo"
+              class="customers-partners__slide"
+            />
+            <img
+              src="assets/logos/ibm-logo.svg"
+              alt="ibm-logo"
+              class="customers-partners__slide"
+            />
+            <img
+              src="assets/logos/nyc.svg"
+              alt="nyc"
+              class="customers-partners__slide"
+            />
+            <img
+              src="assets/logos/google-logo.svg"
+              alt="google-logo"
+              class="scustomers-partners__slide"
+            />
+            <img
+              src="assets/logos/smarter.svg"
+              alt="smarter"
+              class="scustomers-partners__slide"
+            />
+            <img
+              src="assets/logos/jira.svg"
+              alt="jira"
+              class="scustomers-partners__slide"
+            />
+          </figure>
+        </article>
+      </section>
+    </main>
+
+    <!-- footer content -->
+    <footer class="page-footer">
+      <ul>
+        <li>
+          <a href="#"><i class="fab fa-github page-footer--social"></i></a>
+          <a href="#"><i class="fab fa-facebook-f page-footer--social"></i></a>
+          <a href="#"><i class="fab fa-twitter page-footer--social"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in page-footer--social"></i></a>
+        </li>
+      </ul>
+      <p>&#169; 2021 dotCircle. All rights reserved.</p>
+    </footer>
+
+    <!-- js includes -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".navbar__toggle").click(function () {
+          $(this).toggleClass("active");
+          $(".navbar__item").fadeToggle("open");
+        });
+      });
+    </script>
+  </body>
+</html>

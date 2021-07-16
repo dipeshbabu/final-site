@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- required meta tags -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Dipesh Mahato" />
+    <meta name="description" content="Home - dotCircle" />
+
+    <!-- title -->
+    <title>Home | dotCircle</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/home.css" />
+
+    <!-- fonts -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- logo and navigation menu -->
+    <nav class="navbar">
+      <ul class="navbar__links">
+        <li class="navbar__logo active">
+          <a href="home.html">
+            <img src="assets/images/matroid.png" alt="logo" />
+          </a>
+        </li>
+        <li class="navbar__item">
+          <a href="home.html" class="active">Home</a>
+        </li>
+        <li class="navbar__item"><a href="product.html">Product</a></li>
+        <li class="navbar__item"><a href="partners.html">Partners</a></li>
+        <li class="navbar__item"><a href="about.html">About</a></li>
+        <li class="navbar__item"><a href="contact.html">Contact</a></li>
+        <li class="navbar__toggle"><span class="navbar__bars"></span></li>
+      </ul>
+    </nav>
+
+    <!-- main layout of the page -->
+    <main>
+      <section class="main-page">
+        <h1>Let your business driven by the Conversational AI</h1>
+        <p>
+          Turning conversations into customers with live agents & AI is the way
+          to push your business to the next level.
+        </p>
+        <button class="main-page__btn" type="button">GET STARTED</button>
+        <video autoplay loop muted playsinline>
+          <source src="assets/videos/visual-header.mp4" type="video/mp4" />
+          Your browser does not support mp4 videos, change browser!
+        </video>
+      </section>
+
+      <article class="container-second">
+        <h2>Industries We Cover</h2>
+        <hr />
+        <ul>
+          <li>HEALTHCARE</li>
+          <li>FINTECH</li>
+          <li>RETAIL</li>
+          <li>MEDIA ADVERTISING</li>
+          <li>EDUCATION</li>
+          <li>TRAVEL AND TRANSPORTATION</li>
+          <li>DATA MINING & PROCESSING</li>
+        </ul>
+      </article>
+
+      <article class="container-third">
+        <h2>Excited, HUH?</h2>
+        <p>Let's see what our chatbots are capable of</p>
+        <hr />
+        <ul>
+          <li>Q&A</li>
+          <li>PUSH NOTIFICATION</li>
+          <li>INTELLIGENT LEARNING</li>
+          <li>PERSONALISED RESPONSE</li>
+          <li>SENTIMENT ANALYSIS</li>
+          <li>HUMAN HANDOVER</li>
+        </ul>
+        <a href="product.html">
+          <p class="container-third__btn">KNOW MORE</p>
+        </a>
+      </article>
+    </main>
+
+    <!-- footer content -->
+    <footer class="page-footer">
+      <ul>
+        <li>
+          <a href="#"><i class="fab fa-github page-footer--social"></i></a>
+          <a href="#"><i class="fab fa-facebook-f page-footer--social"></i></a>
+          <a href="#"><i class="fab fa-twitter page-footer--social"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in page-footer--social"></i></a>
+        </li>
+      </ul>
+      <p>&#169; 2021 dotCircle. All rights reserved.</p>
+    </footer>
+
+    <!-- js includes -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".navbar__toggle").click(function () {
+          $(this).toggleClass("active");
+          $(".navbar__item").fadeToggle("open");
+        });
+      });
+    </script>
+  </body>
+</html>

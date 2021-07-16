@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- required meta tags -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Dipesh Mahato" />
+    <meta name="description" content="About - dotCircle" />
+
+    <!-- title -->
+    <title>About | dotCircle</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/about.css" />
+
+    <!-- fonts -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- logo and navigation menu -->
+    <nav class="navbar">
+      <ul class="navbar__links">
+        <li class="navbar__logo">
+          <a href="home.html">
+            <img src="assets/images/matroid.png" alt="logo" />
+          </a>
+        </li>
+        <li class="navbar__item"><a href="home.html">Home</a></li>
+        <li class="navbar__item"><a href="product.html">Product</a></li>
+        <li class="navbar__item"><a href="partners.html">Partners</a></li>
+        <li class="navbar__item">
+          <a href="about.html" class="active">About</a>
+        </li>
+        <li class="navbar__item"><a href="contact.html">Contact</a></li>
+        <li class="navbar__toggle"><span class="navbar__bars"></span></li>
+      </ul>
+    </nav>
+
+    <!-- main layout of the page -->
+    <main>
+      <section class="main-page">
+        <h1>About dotCircle</h1>
+        <!-- line separator -->
+        <hr />
+        <article class="main-page__about-company">
+          <h2>
+            <!-- dotCircle, a transformer of your businesses and daily lives with
+            Conversational AI. -->
+            We kick ass on.
+          </h2>
+          <p>
+            dotCircle is a Kathmandu-based company specially focused on
+            Conversational AI made for customer service. We are representing the
+            next-generation of chatbots, through a fundamentally new way of
+            thinking, doing and designing user experiences.
+          </p>
+        </article>
+      </section>
+
+      <article class="members">
+        <h1>dotCircle Leadership</h1>
+        <hr />
+        <div class="members__member-info">
+          <figure class="members__card1">
+            <img src="assets/images/IMG_3520-min.JPG" alt="dipesh" />
+            <figcaption>
+              <p class="members__name">Dipesh Babu</p>
+              <p class="members__position">CEO and Co-founder</p>
+            </figcaption>
+          </figure>
+          <figure class="members__card2">
+            <img src="assets/images/anish.jpg" alt="anish" />
+            <figcaption>
+              <p class="members__name">Anish Ghimire</p>
+              <p class="members__position">CTO</p>
+            </figcaption>
+          </figure>
+          <figure class="members__card3">
+            <img src="assets/images/rahul.jpg" alt="rahul" />
+            <figcaption>
+              <p class="members__name">Rahul Ratna Das</p>
+              <p class="members__position">R&D Lead</p>
+            </figcaption>
+          </figure>
+          <figure class="members__card4">
+            <img src="assets/images/aashutosh.jpg" alt="aashutosh" />
+            <figcaption>
+              <p class="members__name">Aashutosh Sapkota</p>
+              <p class="members__position">Tech Lead, AI & Machine Learning</p>
+            </figcaption>
+          </figure>
+          <figure class="members__card5">
+            <img src="assets/images/nischal.jpg" alt="nischal" />
+            <figcaption>
+              <p class="members__name">Nischal Bhandari</p>
+              <p class="members__position">Adviser</p>
+            </figcaption>
+          </figure>
+          <figure class="members__card6">
+            <img src="assets/images/utkrista.jpg" alt="utkrista" />
+            <figcaption>
+              <p class="members__name">Utkrista Acharya</p>
+              <p class="members__position">Project Management</p>
+            </figcaption>
+          </figure>
+        </div>
+      </article>
+    </main>
+
+    <!-- footer content -->
+    <footer class="page-footer">
+      <ul>
+        <li>
+          <a href="#"><i class="fab fa-github page-footer--social"></i></a>
+          <a href="#"><i class="fab fa-facebook-f page-footer--social"></i></a>
+          <a href="#"><i class="fab fa-twitter page-footer--social"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in page-footer--social"></i></a>
+        </li>
+      </ul>
+      <p>&#169; 2021 dotCircle. All rights reserved.</p>
+    </footer>
+
+    <!-- js includes -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".navbar__toggle").click(function () {
+          $(this).toggleClass("active");
+          $(".navbar__item").fadeToggle("open");
+        });
+      });
+    </script>
+  </body>
+</html>
